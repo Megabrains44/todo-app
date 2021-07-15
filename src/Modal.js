@@ -123,7 +123,7 @@ class Modal extends React.Component{
         
     }
     handleCategoryChange(e){
-        this.setState({category: e.target.value})
+        this.setState({category: e.target.value, isOtherSelected:false})
     }
     handleOtherCategoryChange(e){
         
