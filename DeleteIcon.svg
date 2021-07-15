@@ -1,0 +1,10 @@
+<svg id="X-Icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="Ellipse_2" data-name="Ellipse 2" fill="#fee" stroke="red" stroke-width="5">
+    <circle cx="27.5" cy="27.5" r="27.5" stroke="none"/>
+    <circle id="redcircleX" cx="27.5" cy="27.5" r="25" fill="none"/>
+  </g>
+  <g id="X" transform="translate(-2.23 1.311)">
+    <line id="Line_1" data-name="Line 1" y1="25.379" x2="22.46" transform="translate(18.5 13.5)" fill="none" stroke="red" stroke-width="8"/>
+    <path id="Path_1" data-name="Path 1" d="M0,0,17.7,19.808l4.086,4.571" transform="translate(18.5 14.5)" fill="none" stroke="red" stroke-width="8"/>
+  </g>
+</svg>
