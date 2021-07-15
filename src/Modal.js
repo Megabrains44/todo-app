@@ -138,6 +138,7 @@ class Modal extends React.Component{
     render() {
         return (
             <aside className="modal" style={{border: `5px solid ${this.state.color}`}}>
+                <div className="x" onClick={() => this.props.hideModal()}>&times;</div>
                 <form id="modal-form" onSubmit={this.handleSubmit}>
                     <h2 className="modal-title">{this.getName()}</h2>
                     <input 

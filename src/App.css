@@ -207,12 +207,20 @@
     opacity: 0;
 }
 .modal{
-    max-width: 90vw;
+    max-width: 85vw;
     width: 440px;
     height: 630px;
+    max-height: 600px;
     background-color: white;
     padding: 1rem;
     position: relative;
+} 
+.x{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    font-size: 3rem;
 }
 .make-bigger{
     transition-timing-function: ease;
