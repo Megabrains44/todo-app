@@ -2,13 +2,12 @@ import DeleteTodo from './DeleteTodo'
 // import EditTodo from './EditTodo';
 
 
-function Todo({name, date, category, color, id, handleDelete, triggerEditTodo}){
+function Todo({name, date, category, color, id, handleDelete}){
     
     return (
         <div className="todo" style={{border: `4px solid ${color}`}}>
             
 
-            {/* <EditTodo triggerEditTodo={triggerEditTodo} id={id}/> */}
             <DeleteTodo handleDelete={handleDelete} id={id}/>
             <h1 className="todo__title">{name}</h1>
             <div className="info date">

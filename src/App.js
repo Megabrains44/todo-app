@@ -4,7 +4,6 @@ import AddTodo from './AddTodo';
 import Todo from './Todo';
 import { v4 as uuidv4 } from 'uuid';
 import Modal from './Modal';
-import EditModal from './EditModal'
 import React from 'react';
 // doing the mobile version
 const LOCALSTORAGE_KEY = "todoApp.todos";
@@ -73,22 +72,8 @@ function App() {
       id: uuidv4()
     }])
   }
-  function handleEdit(todoID, newName, newDate, newCategory, newColor){
-    const newTodos = todos;
-    const getTodo = newTodos.filter(todo => todoID === todo.id);
-    getTodo.name = newName;
-    getTodo.date = newDate;
-    getTodo.category = newCategory;
-    getTodo.color = newColor;
-    
-    setTodos(newTodos)
-  }
-  function triggerEditTodo(id){
-    modal.current.classList.remove('fade-out')
-    modal.current.classList.add('fade-in')
-    modal.current.style.display = "flex"
-    modal.current.style.visibility = "visible";
-  }
+  
+  
   return (
     
     <div className="App">
@@ -106,7 +91,6 @@ function App() {
             color={todo.color} 
             id={todo.id} 
             handleDelete={handleDelete}
-            triggerEditTodo={triggerEditTodo}
           />
           )}
           <AddTodo triggerAddTodo={triggerAddTodo}/>
